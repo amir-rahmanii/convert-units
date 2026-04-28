@@ -91,3 +91,38 @@ test('month to year', () => {
   });
   expect(convert(12).from('month').to('year')).toBe(1);
 });
+
+test('month to decade', () => {
+  const convert = configureMeasurements<'time', TimeSystems, TimeUnits>({
+    time,
+  });
+  expect(convert(120).from('month').to('decade')).toBe(1);
+});
+
+test('month to century', () => {
+  const convert = configureMeasurements<'time', TimeSystems, TimeUnits>({
+    time,
+  });
+  expect(convert(1200).from('month').to('century')).toBe(1);
+});
+
+test('year to decade', () => {
+  const convert = configureMeasurements<'time', TimeSystems, TimeUnits>({
+    time,
+  });
+  expect(convert(10).from('year').to('decade')).toBe(1);
+});
+
+test('year to century', () => {
+  const convert = configureMeasurements<'time', TimeSystems, TimeUnits>({
+    time,
+  });
+  expect(convert(100).from('year').to('century')).toBe(1);
+});
+
+test('decade to century', () => {
+  const convert = configureMeasurements<'time', TimeSystems, TimeUnits>({
+    time,
+  });
+  expect(convert(10).from('decade').to('century')).toBe(1);
+});

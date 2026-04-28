@@ -12,7 +12,9 @@ export type TimeSIUnits =
   | 'd'
   | 'week'
   | 'month'
-  | 'year';
+  | 'year'
+  | 'decade'
+  | 'century';
 
 const SI: Record<TimeSIUnits, Unit> = {
   ns: {
@@ -96,6 +98,20 @@ const SI: Record<TimeSIUnits, Unit> = {
       plural: 'Years',
     },
     to_anchor: 3.15576e7, // 60 * 60 * 24 * 365.25,
+  },
+  decade: {
+    name: {
+      singular: 'Decade',
+      plural: 'Decades',
+    },
+    to_anchor: 3.15576e8, // 60 * 60 * 24 * 365.25 * 10,
+  },
+  century: {
+    name: {
+      singular: 'Century',
+      plural: 'Centuries',
+    },
+    to_anchor: 3.15576e9, // 60 * 60 * 24 * 365.25 * 100,
   },
 };
 

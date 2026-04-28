@@ -1031,6 +1031,8 @@ Packaged Units
 * week
 * month
 * year
+* decade
+* century
 </details>
 
 <details>

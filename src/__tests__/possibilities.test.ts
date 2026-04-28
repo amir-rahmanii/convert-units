@@ -346,6 +346,8 @@ test('time possibilities', () => {
       'week',
       'month',
       'year',
+      'decade',
+      'century',
     ];
   expect(actual.sort()).toEqual(expected.sort());
 });
@@ -673,6 +675,7 @@ test('all possibilities', () => {
       'bar',
       'c',
       'cal',
+      'century',
       'cl',
       'cl/s',
       'cm',
@@ -687,6 +690,7 @@ test('all possibilities', () => {
       'deg/s',
       'dl',
       'dl/s',
+      'decade',
       'dm',
       'dm2',
       'dm3',
